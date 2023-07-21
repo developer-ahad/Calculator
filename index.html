@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- Google Icon Link-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+</head>
+<body>
+  <div class="calculator">
+
+    <!--Calculator Light & Dirk Mode Setup Div-->
+    <div class="lightDirk">
+      <tr>
+        <span class="material-symbols-outlined light">
+          light_mode
+          </span>
+          <div class="line"></div>
+          <span class="material-symbols-outlined dark">
+            dark_mode
+          </span>
+      </tr>
+    </div>
+
+    <!--Result Show Div-->
+    <input id="whatIsResult" disabled>
+    <input type="text" id="resultShow" disabled>
+
+    <!--Calculator Buttons Add-->
+    <div class="keys">
+      <tr>
+        <input type="button" value="AC" onclick="remove()" class="extraButton">
+        <input type="button" value="(" onclick="keys('(')" class="extraButton">
+        <input type="button" value=")" onclick="keys(')')" class="extraButton">
+        <input type="button" value="+" onclick="keys('+')" class="oparetionButton">
+      </tr>
+      <tr>
+        <input type="button" value="7" onclick="keys('7')">
+        <input type="button" value="8" onclick="keys('8')">
+        <input type="button" value="9" onclick="keys('9')">
+        <input type="button" value="-" onclick="keys('-')" class="oparetionButton">
+      </tr>
+      <tr>
+        <input type="button" value="4" onclick="keys('4')">
+        <input type="button" value="5" onclick="keys('5')">
+        <input type="button" value="6" onclick="keys('6')">
+        <input type="button" value="*" onclick="keys('*')" class="oparetionButton">
+      </tr>
+      <tr>
+        <input type="button" value="1" onclick="keys('1')">
+        <input type="button" value="2" onclick="keys('2')">
+        <input type="button" value="3" onclick="keys('3')">
+        <input type="button" value="/" onclick="keys('/')" class="oparetionButton">
+      </tr>
+      <tr>
+        <input type="button" value="&#9003" onclick="backspace('<')">
+        <input type="button" value="0" onclick="keys('0')">
+        <input type="button" value="." onclick="keys('.')">
+        <input type="button" value="=" onclick="result()" class="oparetionButton">
+      </tr>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

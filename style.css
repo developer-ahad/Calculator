@@ -1,0 +1,107 @@
+*{
+  font-family: 'Heebo', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+.calculator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 312px;
+  height: 600px;
+  background-color: #22252d;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+body span {
+  color: white;
+}
+
+.light{
+  position: absolute;
+  top: 6px;
+  left: 8px;
+}
+
+.line{
+  border-left: 1px solid gray;
+  height: 25px;
+  position: absolute;
+  left: 42px;
+  top: 6px;
+}
+.dark{
+  position: absolute;
+  right: 8px;
+  top: 6px;
+}
+.lightDirk{
+   background-color: #292d36;
+   width: 85px;
+   height: 37px;
+   border-radius: 20px;
+   position: absolute;
+   top: 25px;
+   overflow: hidden;
+}
+.keys{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  background-color: #292d36;
+  border-radius: 22px;
+  position: relative;
+  margin-top: 228px;
+}
+
+.keys input{
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  font-size: 22px;
+  font-weight: 600;
+  /* font-weight: bold; */
+  background-color: #252930;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  transition: 0.2s;
+}
+.keys .extraButton{
+  color: #27d1b4;
+}
+.keys .oparetionButton{
+  color: #e40c1f;
+  font-size: 25px;
+}
+.keys input:hover{
+  background-color: #2f3644;
+}
+.keys input:active{
+  box-shadow: 0px 0px 10px #22252d;
+}
+#resultShow{
+  text-align: right;
+  width: 280px;
+  height: 50px;
+  position: absolute;
+  font-size: 40px;
+  top: 170px;
+  background-color: #22252d;
+  border: none;
+  font-weight: 600;
+  color: white;
+}
+
+#whatIsResult{
+  position: absolute;
+  background-color: #22252d;
+  color: white;
+  top: 140px;
+  border: none;
+  width: 280px;
+  text-align: right;
+  font-size: 18px;
+  /* left: 210px; */
+}
