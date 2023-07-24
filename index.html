@@ -12,12 +12,12 @@
 
 </head>
 <body>
-  <div class="calculator">
+  <div class="calculator" id="calculator">
 
     <!--Calculator Light & Dirk Mode Setup Div-->
-    <div class="lightDirk">
+    <div class="lightDirk" id="lightDirk">
       <tr>
-        <span class="material-symbols-outlined light">
+        <span class="material-symbols-outlined light" onclick="lightMode()" id="lightMode">
           light_mode
           </span>
           <div class="line"></div>
@@ -32,11 +32,11 @@
     <input type="text" id="resultShow" disabled>
 
     <!--Calculator Buttons Add-->
-    <div class="keys">
+    <div class="keys" id="keyDiv">
       <tr>
-        <input type="button" value="AC" onclick="remove()" class="extraButton">
-        <input type="button" value="(" onclick="keys('(')" class="extraButton">
-        <input type="button" value=")" onclick="keys(')')" class="extraButton">
+        <input type="button" value="AC" onclick="remove()" class="extraButton" id="lightGreenKey">
+        <input type="button" value="(" onclick="keys('(')" class="extraButton" id="lightGreenKey">
+        <input type="button" value=")" onclick="keys(')')" class="extraButton" id="lightGreenKey">
         <input type="button" value="+" onclick="keys('+')" class="oparetionButton">
       </tr>
       <tr>
@@ -65,6 +65,7 @@
       </tr>
     </div>
   </div>
+  <button id="hello">Click</button>
   <script src="script.js"></script>
 </body>
 </html>
